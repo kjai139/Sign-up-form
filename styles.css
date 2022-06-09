@@ -1,0 +1,85 @@
+:root {
+    box-sizing: border-box;
+    
+}
+
+@font-face {
+    font-family: NorseBold;
+    src: url(font/Norse-Bold.otf);
+}
+
+@font-face {
+    font-family: ProdaSans;
+    src: url(font/Nasir\ Udin\ -\ ProdaSans-Medium.otf);
+}
+@font-face {
+    font-family: ProdaSans;
+    src: url(font/Nasir\ Udin\ -\ ProdaSans-SemiBoldItalic.otf);
+    font-weight: bold;
+}
+
+body {
+   
+    display:flex;
+    justify-content: stretch;
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    flex: 1 1 0;
+    
+}
+
+html {
+    display:flex;
+    height:100%;
+    flex: 1 0 0;
+    
+}
+
+
+.outerContainer {
+    min-width: 100%;
+    height: 100%;
+    display:flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    
+    
+    
+    
+    
+    
+}
+
+.leaves {
+    display:flex;
+    
+}
+
+.leftContainer {
+    display:flex;
+    flex: 1 1 0;
+}
+.rightContainer {
+   display:flex;
+    
+    
+    
+    
+}
+
+form {
+    flex-direction: column;
+    display: flex;
+}
+.entireFormContainer {
+    display:flex;
+    
+    
+}
+
+.formTopPara  {
+    padding: 5rem 1rem 2rem 1rem;
+    font-family: 'ProdaSans', Arial, Helvetica, sans-serif;
+    background-color: #f9fafb;
+}
