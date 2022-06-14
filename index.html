@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js" defer></script>
 </head>
 <body>
     <div class="outerContainer">
         <div class="leftContainer">
-            <img src="images/background.jpg" alt="leaves" class="leaves">
+            
         </div>
         <div class="rightContainer">
             
-                <form action="" method="post">
+                <form action="" method="post" class="queryForm">
                     <div class="formTopPara">
                         <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
                             </p>
                             <p>Sign up now to get started.</p>
-                            <p>You know you want to.</p>
+                            <p>You&nbsp;<i>know</i>&nbsp;you want to.</p>
 
                     </div>
                     <div class="formMidSection">
@@ -28,27 +29,32 @@
                             <div class="div1">
                             <div>
                             <label for="userFirstName">FIRST NAME</label>
-                            <input type="text" id="userFirstName" name="userFirstName">
+                            <input type="text" id="userFirstName" name="userFirstName" required minlength="2">
+                            <p class="help">Please enter a first name</p>
                             </div>
                             <div>
                             <label for="userlastName">LAST NAME</label>
-                            <input type="text" id="userLastName" name="userLastName">
+                            <input type="text" id="userLastName" name="userLastName" required minlength="2">
+                            <p class="help">Please enter a last name</p>
                             </div>
                             </div>
                             <div class="div2">
                             <div>
                             <label for="userEmail">EMAIL</label>
-                            <input type="email" id="userEmail" name="UserEmail">
+                            <input type="email" id="userEmail" name="UserEmail" required placeholder="example:123@home.ca">
+                            <p class="help">Please enter an email</p>
                             </div>
                             <div>
                             <label for="userPhoneNum">PHONE NUMBER</label>
-                            <input type="tel" name="userPhoneNum" id="userPhoneNum">
+                            <input type="tel" name="userPhoneNum" id="userPhoneNum" required pattern="^(\([0-9]{3})|[0-9]{3} |[0-9]{3}-|[0-9]{3}([0-9]{3}-|[0-9]{3} |[0-9]{3})[0-9]{4}$" minlength="10" maxlength="15">
+                            <p class="help">Please enter a phone number</p>
                             </div>
                             </div>
                             <div class="div3">
                             <div>
                             <label for="userPw">PASSWORD</label>
-                            <input type="password" name="userPw" id="userPw">
+                            <input type="password" name="userPw" id="userPw" required minlength="1">
+                            <p class="help" id="passwordError">Please enter a password</p>
                             </div>
                             <div>
                             <label for="confirmPw">CONFIRM PASSWORD</label>
