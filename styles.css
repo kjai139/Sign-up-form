@@ -80,6 +80,10 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     flex:1;
+
+
+
+    position: relative;
     
     
    
@@ -90,11 +94,6 @@ body {
 .rightContainer, .rightContainer > * {
   display:flex;
   flex: 2;
-  
-  
-  
-
- 
    
     
     
@@ -266,3 +265,42 @@ input:focus {
     text-decoration: underline;
 }
 
+
+
+.odinContainer {
+    display:flex;
+    position: absolute;
+    height:120px;
+    background-color: rgba(0,0,0,0.5);
+    
+    
+    
+}
+
+.leftOdin {
+    display:flex;
+    background-image: url(images/odin-lined.png);
+    flex:1;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: 70px 90px;
+    justify-content: center;
+    align-items: center;
+    background-origin: content-box;
+    background-position: right;
+}
+
+.rightOdin {
+    display:flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightOdin > p {
+    display:flex;
+    flex:1;
+    color: white;
+    font-size: 65px;
+    font-family: 'NorseBold', Helvetica;
+}

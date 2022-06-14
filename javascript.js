@@ -2,6 +2,25 @@
 const queryForm = document.querySelector('.queryForm')
 queryForm.noValidate = true;
 
+const topHeight = document.querySelector('.formTopPara').clientHeight
+const odinContainer = document.querySelector('.odinContainer')
+
+const leftContainerWidth = document.querySelector('.leftContainer').clientWidth
+
+
+
+odinContainer.style.top = (`${topHeight-odinContainer.clientHeight-4}px`)
+odinContainer.style.width = (`${leftContainerWidth}px`)
+
+let flexOdin = () => {
+    let flexHeight = document.querySelector('.formTopPara')
+    
+    odinContainer.style.top = (`${flexHeight.clientHeight-odinContainer.clientHeight}px`)
+    let flexWidth = document.querySelector('.leftContainer')
+    odinContainer.style.width = (`${flexWidth.clientWidth}px`)
+    
+}
+
 let validateForm = (event) => {
     const form = event.target
     const pw = document.querySelector('#userPw')
@@ -33,3 +52,4 @@ let validateForm = (event) => {
 
 
 queryForm.addEventListener('submit', validateForm)
+window.addEventListener('resize', flexOdin)
