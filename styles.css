@@ -224,7 +224,7 @@ input:focus {
 }
 
 .invalid input {
-    border: 1 px solid red;
+    border: 1px solid red;
 }
 
 .help {
